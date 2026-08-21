@@ -22,7 +22,7 @@ The repository now includes a cleaned scenario-level dataset, an inspectable rub
 [Explore the Maya evaluation](maya-clinical-ai-evaluation/README.md)  
 [View the 3-page case study](maya-clinical-ai-evaluation/case-study.pdf)
 
-## Other projects
+## Selected projects
 
 ### Rapid visual naming and scanning assessment
 A tablet-based system for measuring rapid visual naming and scanning behaviour.
@@ -48,13 +48,13 @@ https://adhdunfreeze.com/
 
 [Project notes](other-projects/adhd-unfreeze.md)
 
-###Behavioural research
+### Behavioural research
 Behavioural science in myopia management
 Applied behavioural research into a difficult preventative-health decision involving parents, children, clinicians and long-term adherence.
 The work combined behavioural diagnosis, system modelling, intervention design and longitudinal practice outcomes. It reached approximately 80% consultation-to-enrolment conversion and under 6% attrition across four years.
 Read the project
 
-###Research and scientific writing
+### Research and scientific writing
 These earlier projects are included as evidence of research synthesis and scientific communication. They are not AI safety research.
 Defusing the Myopia Time-Bomb
 Clinical evidence synthesis covering myopia prevalence, risk, mechanisms, prediction and management.

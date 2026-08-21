@@ -2,81 +2,80 @@
 
 Maya is an optometry voice agent designed to answer parents' questions about childhood myopia, identify safety-critical presentations and support appropriate next steps.
 
-I designed a structured evaluation to test what the agent did when information was incomplete, a parent described a red-flag symptom, evidence conflicted, a booking tool failed, or the safest response was to admit uncertainty.
+I designed a structured evaluation to test what the agent did when information was incomplete, a parent described a red-flag symptom, a question fell outside scope, a booking tool failed, or the safest response was to admit uncertainty.
+
+**[View the 3-page case study PDF](case-study.pdf)**
 
 ## Evaluation at a glance
 
 | Measure | Number |
 |---|---:|
-| Test scenarios | 22 |
+| Voice-test scenarios | 22 |
 | Scoring criteria | 18 |
 | Safety-gate criteria | 2 |
 | Additional criteria introduced during review | 4 |
-| Scenarios that drove a fix | 10 |
+| Final Pass verdicts in completed workbook | 22 |
+| Scenarios that drove a fix (case-study summary) | 10 |
+
+A final Pass is the end-state verdict recorded after testing and iteration. It does not mean the scenario exposed no weakness during development.
 
 ## My role
 
 I designed the clinical workflow and created test cases from questions and presentations encountered during 28 years of optometric practice.
 
-I built the evaluation rubric, including four criteria I identified as gaps in the platform's built-in evaluation set:
+I built the evaluation rubric, including four criteria I identified as gaps in the platform's existing evaluation set:
 
 - atropine and red-light handling
 - NHS-funding honesty
 - booking mechanics
 - avoiding inappropriate overselling in low-risk cases
 
-I then tested the agent in the ElevenLabs voice environment and used observed failures to change prompts, knowledge-base material or agent configuration.
+I tested the configured agent in the ElevenLabs voice environment and traced issues through system instructions, knowledge sources or agent configuration.
 
-## Evaluation loop
-
-1. Clinical experience and real parent presentations
-2. Routine, ambiguous and edge-case test scenarios
-3. Expected behaviour defined through a rubric and safety gates
-4. Voice testing with actual output captured and judged
-5. Prompt, workflow, knowledge or configuration changes
-6. Retesting
-
-## What the rubric tested
-
-### Clinical accuracy
-Treatment efficacy, realistic expectations, lifestyle advice and risk-appropriate recommendations.
-
-### Safety and triage
-Red flags and recent blur. Failure on either safety-gate criterion failed the whole call.
-
-### Guardrails
-No diagnosis, no invented facts, controlled handling of atropine/red-light questions and NHS funding.
-
-### Conversation and process
-Tone, empathy, intake, booking behaviour, data capture and handling of tool failure.
-
-## Problems surfaced
-
-Testing surfaced issues involving:
-
-- emergency triage
-- onset urgency
-- non-myopia scope
-- prescription-sign confusion (myopia versus hyperopia)
-- ortho-k prescription suitability and safety
-- NHS-funding wording
-- atropine/red-light questions
-- voice-agent latency
-
-These findings fed back into the prompt, knowledge base or agent configuration.
-
-## Repository documents
+## Evaluation artefacts
 
 - [Methodology](methodology.md)
-- [Evaluation rubric](evaluation-rubric.md)
-- [Representative test scenarios](test-scenarios.md)
-- [Findings and fixes](findings.md)
-- [Limitations and proposed next tests](limitations-and-next-tests.md)
+- [Rubric overview](evaluation/rubric.md)
+- [Full rubric as CSV](evaluation/rubric.csv)
+- [Scenario-level results](evaluation/scenario-results.md)
+- [Cleaned results dataset](evaluation/evaluation-results.csv)
+- [Results summary](evaluation/results-summary.md)
+- [Worked findings](evaluation/worked-findings.md)
 - [Clinical decision logic](decision-tree.md)
-- [Original 3-page case study](case-study.pdf)
+- [Limitations and proposed next tests](limitations-and-next-tests.md)
+
+## Selected findings
+
+### Atropine licensing
+Outdated licensing information was identified and corrected across four knowledge-base files.
+
+[Read finding](findings/atropine-licensing.md)
+
+### Ortho-k infection-rate source tracing
+Two figures initially appeared inconsistent. Source tracing established that the lower 4–6 per 10,000 figure came from the same Russian ortho-k study already cited in the knowledge base.
+
+[Read finding](findings/ortho-k-evidence.md)
+
+### Honest gap
+The agent is deliberately instructed not to invent a precise axial-length action threshold where the underlying guidance does not provide one.
+
+[Read finding](findings/honest-gap.md)
+
+### Voice latency
+Testing identified response lag that affected conversational pacing and led to configuration review.
+
+[Read finding](findings/voice-latency.md)
+
+## Voice-specific testing
+
+The project was tested in a voice environment rather than only through text prompts. One TC-03 run transcribed **“floaters” as “flowers”**, requiring repetition. This exposed a safety-relevant failure mode at the speech-recognition layer.
 
 ## Tools
 
 ElevenLabs, APIs, Claude Code, OpenAI Codex, GitHub and Vercel.
 
 Most implementation code was generated using Claude Code or Codex. My work centred on system requirements, clinical logic, evaluation design, testing, failure analysis and directing changes.
+
+## Scope
+
+This is an applied evaluation of one configured clinical voice agent. It is not a general evaluation of the underlying language model.

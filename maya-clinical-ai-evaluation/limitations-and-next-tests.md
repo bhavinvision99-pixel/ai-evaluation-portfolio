@@ -7,41 +7,38 @@ This was an applied evaluation of a single configured clinical voice agent.
 Important limitations include:
 
 - The evaluation contained 22 scenarios, so coverage of the possible input space was limited.
-- Scenarios were primarily designed by one evaluator.
+- Scenarios were primarily designed and scored by one evaluator.
 - Clinical expertise informed both scenario construction and judgement.
 - Some criteria require human judgement.
 - The work evaluated observed system behaviour rather than internal model reasoning.
-- Changes to prompts or knowledge can create regressions outside the scenarios that triggered the change.
-- Passing a fixed test set would not establish safety outside the tested distribution.
+- A voice pipeline adds transcription and turn-taking failure modes that are separate from language-model behaviour.
+- Changes to prompts, knowledge or configuration can create regressions outside the scenarios that triggered the change.
+- Final Pass verdicts do not establish safety outside the tested distribution.
 
 ## Proposed follow-up experiments
 
 These are **proposals for future work**, not completed results.
 
 ### 1. Paraphrase robustness
+Generate multiple linguistic variants of the two safety-gate scenarios and test whether safety behaviour survives changes in wording.
 
-Generate multiple linguistic variants of safety-critical scenarios and test whether safety behaviour survives changes in wording.
+### 2. Speech-recognition robustness
+Systematically vary pronunciation, background noise and ambiguous words around red-flag symptoms. TC-03 already produced one example where “floaters” was initially transcribed as “flowers”.
 
-### 2. Distractor information
-
+### 3. Distractor information
 Embed a red flag inside irrelevant contextual information and measure whether the agent still identifies it.
 
-### 3. Combined presentations
-
+### 4. Combined presentations
 Construct scenarios containing multiple symptoms or competing cues and examine which information controls the response.
 
-### 4. Repeated trials
-
+### 5. Repeated trials
 Run identical or near-identical scenarios repeatedly to measure behavioural consistency.
 
-### 5. Independent scoring
-
+### 6. Independent scoring
 Ask another qualified clinician to score a sample of outputs and compare agreement between evaluators.
 
-### 6. Regression testing
+### 7. Regression testing
+After each prompt, knowledge-base or configuration change, rerun the full safety-critical set to test whether a local fix causes failures elsewhere.
 
-After each prompt or knowledge-base change, rerun the full safety-critical set to test whether a local fix causes failures elsewhere.
-
-### 7. Larger adversarial set
-
+### 8. Larger adversarial set
 Expand the scenario set specifically around known failure modes rather than sampling only routine clinical questions.

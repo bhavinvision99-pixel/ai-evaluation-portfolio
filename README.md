@@ -8,17 +8,19 @@ This repository documents selected work involving AI evaluation, behavioural tes
 
 I designed a structured evaluation of Maya, a patient-facing clinical AI voice agent answering parents' questions about childhood myopia.
 
-The evaluation used:
+The completed evaluation contains:
 
-- **22 test scenarios**
+- **22 voice-test scenarios**
 - **18 scoring criteria**
 - **2 safety-gate criteria**
-- **4 additional criteria** identified as gaps in the platform's existing evaluation set
-- **10 scenarios that drove a fix**
+- **4 additional criteria** identified during review
+- **22 final Pass verdicts** in the completed workbook
+- **10 scenarios that drove a fix**, as reported in the case-study summary
 
-Testing covered routine questions, ambiguous presentations and clinical edge cases. Problems found during testing led to changes in the prompt, knowledge base or agent configuration.
+The repository now includes a cleaned scenario-level dataset, an inspectable rubric, worked findings and the original case-study PDF.
 
-[Read the Maya project](maya-clinical-ai-evaluation/README.md)
+[Explore the Maya evaluation](maya-clinical-ai-evaluation/README.md)  
+[View the 3-page case study](maya-clinical-ai-evaluation/case-study.pdf)
 
 ## Other projects
 
@@ -54,6 +56,6 @@ My contribution focuses on problem definition, system behaviour and requirements
 
 Tools used across projects include **Claude Code, OpenAI Codex, GitHub, Vercel, ElevenLabs and APIs**.
 
-## About this repository
+## Portfolio scope
 
-This is a project portfolio rather than a claim that every project is formal AI safety research. The Maya project is an applied evaluation of a configured clinical AI system. I have included its limitations explicitly and separated observed results from proposed follow-up experiments.
+This portfolio includes applied AI evaluation, measurement projects and AI-assisted systems. Maya is the most developed evaluation project.

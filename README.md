@@ -48,6 +48,21 @@ https://adhdunfreeze.com/
 
 [Project notes](other-projects/adhd-unfreeze.md)
 
+###Behavioural research
+Behavioural science in myopia management
+Applied behavioural research into a difficult preventative-health decision involving parents, children, clinicians and long-term adherence.
+The work combined behavioural diagnosis, system modelling, intervention design and longitudinal practice outcomes. It reached approximately 80% consultation-to-enrolment conversion and under 6% attrition across four years.
+Read the project
+
+###Research and scientific writing
+These earlier projects are included as evidence of research synthesis and scientific communication. They are not AI safety research.
+Defusing the Myopia Time-Bomb
+Clinical evidence synthesis covering myopia prevalence, risk, mechanisms, prediction and management.
+Read the project
+Vision and Dyslexia
+Evidence synthesis in a contested clinical area, with attention to conflicting findings, association versus causation and limits of visual interventions.
+Read the project
+
 ## Development approach
 
 I use Claude Code and OpenAI Codex extensively for software implementation. Most Python and JavaScript/TypeScript used in these projects was generated with AI coding agents.

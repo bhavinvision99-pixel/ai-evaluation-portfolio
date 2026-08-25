@@ -63,6 +63,16 @@ Vision and Dyslexia
 Evidence synthesis in a contested clinical area, with attention to conflicting findings, association versus causation and limits of visual interventions.
 Read the project
 
+### Confidently Wrong — Interactive AI Literacy & Learning Design
+
+Built an interactive learning experience for non-technical users exploring a deceptively difficult problem: **how do you know when an AI-generated answer deserves your trust?**
+
+The experience uses plausible AI answers, immediate explanatory feedback and a behavioural framework I developed called **STOP — Source, Truth, Overconfidence, Pause**. Learners progressively discover the framework before applying it independently to a final scenario.
+
+**What this demonstrates:** AI-assisted product development, learning design, behavioural science, LLM literacy, evaluation, UX thinking, factual QA and human oversight.
+
+[View case study →](ai-learning/confidently-wrong/README.md)
+
 ## Development approach
 
 I use Claude Code and OpenAI Codex extensively for software implementation. Most Python and JavaScript/TypeScript used in these projects was generated with AI coding agents.

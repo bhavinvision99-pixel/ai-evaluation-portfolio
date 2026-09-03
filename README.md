@@ -22,6 +22,28 @@ The repository now includes a cleaned scenario-level dataset, an inspectable rub
 [Explore the Maya evaluation](maya-clinical-ai-evaluation/README.md)  
 [View the 3-page case study](maya-clinical-ai-evaluation/case-study.pdf)
 
+### MISMATCH — London social-housing policy intelligence
+
+**Data analysis · Behavioural science · Responsible AI · Data storytelling · AI-assisted development**
+
+An interactive policy-intelligence project investigating whether London's
+social-housing shortage is also partly a problem of housing mismatch.
+
+I analysed Census data representing **790,221 social-rented households
+across 32 London boroughs**, developed and sensitivity-tested a new
+**Relative Imbalance** diagnostic, and used behavioural science to examine
+why an apparent housing mismatch in a dataset does not automatically
+translate into willingness or ability to move.
+
+The project demonstrates the full workflow from:
+
+**public data → analysis → methodology → behavioural interpretation →
+responsible-AI guardrails → interactive product → public communication**
+
+[Explore the MISMATCH case study](./mismatch-london/)
+
+[View the live application](https://mismatchlondon-beryl.vercel.app/)
+
 ## Selected projects
 
 ### Rapid visual naming and scanning assessment

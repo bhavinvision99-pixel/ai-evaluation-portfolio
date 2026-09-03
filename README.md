@@ -46,6 +46,19 @@ responsible-AI guardrails → interactive product → public communication**
 
 ## Selected projects
 
+### Flower federated healthcare evaluation
+
+A prototype evaluation of federated post-operative complication monitoring using Flower and synthetic cataract-surgery data.
+
+The hospital agents calculated their local metrics correctly. System-level testing then found inconsistent clinical terminology, a Python error that stopped one hospital sending data, incomplete collation and a separate client dropout.
+
+The evaluation covers 6 domains and records the first result, investigation, change and retest across 14 test cases. It also includes critical-failure rules, regression tests and a visual of the evaluation loop.
+
+**What this demonstrates:** AI safety evaluation, known-answer testing, federated-system testing, failure analysis, clinical reasoning, privacy checks and human oversight.
+
+[Explore the Flower evaluation →](flower-federated-healthcare-evaluation/)
+
+
 ### Rapid visual naming and scanning assessment
 A tablet-based system for measuring rapid visual naming and scanning behaviour.
 

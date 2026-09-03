@@ -9,5 +9,5 @@ The review compares evidence from systematic reviews, meta-analyses and clinical
 
 **Key skills demonstrated:** literature searching, evidence synthesis, critical appraisal, scientific writing and cautious interpretation of clinical findings.
 
-[Read the full literature review](music-therapy-parkinsons/music-therapy-parkinsons-literature-review.pdf)
+[Read the full literature review](music-therapy-parkinsons-literature-review.pdf)
 

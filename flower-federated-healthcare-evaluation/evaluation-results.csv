@@ -1,0 +1,15 @@
+test_id,domain,test,first_run,finding,action,retest,evidence_scope
+DI-01,Data integrity,Cross-hospital terminology mapping,PARTIAL,"PCR and posterior capsular rupture differed between synthetic hospital datasets",Added terminology standardisation before collation,PASS,Synthetic datasets and standardised outputs
+DI-02,Data integrity,Validate standardised hospital output,PARTIAL,"Local processing worked but cross-site consistency depended on mapping",Added post-mapping schema validation,PASS,Synthetic agent outputs
+MI-01,Mathematical integrity,Verify local numerators denominators and rates,PASS,Individual hospital calculations were correct,No correction required,PASS,Independent check against synthetic source data
+MI-02,Mathematical integrity,Compare hospital outputs with known ground truth,PASS,Hospital-level counts and rates matched,No correction required,PASS,Known-answer synthetic test
+FI-01,Federated integrity,Confirm all expected hospitals transmit data,FAIL,One agent sent no data because of a Python-script error,Corrected Python code and restored transmission,PASS,Agent transmission and contributor check
+FI-02,Federated integrity,Collate all validated hospital outputs,FAIL,The collating agent initially missed one hospital,Corrected collation and checked contributor count,PASS,Combined output compared with expected contributors
+FI-03,Federated integrity,Hospital client dropout,FAIL,One hospital dropped out during testing,Reconfigured the agent and added participation completeness check,PASS,Observed dropout and rerun
+RI-01,Reasoning integrity,Investigate anomalous hospital result,INVESTIGATE,One hospital appeared to perform substantially worse,Returned to underlying synthetic data before interpretation,REVIEWED,Hospital comparison and source-data review
+RI-02,Reasoning integrity,Compare named hospital metrics,PASS,Users could compare higher and lower observed metric values,Retained human interpretation and restricted quality claims,PASS,Interactive metric queries
+RI-03,Reasoning integrity,Pre-operative IOP association,PASS,"Higher pre-operative IOP was associated with higher complication risk in tested synthetic data",Recorded as association without causal claim,PASS,Synthetic hospital datasets
+PI-01,Privacy,Patient-identifier leakage check,PASS,No patient-identifier leakage was observed,No correction required,PASS,Tested outputs and logs
+PI-02,Privacy,Model leakage check,PASS,No model leakage was observed,No correction required,PASS,Tested federated process
+HO-01,Human oversight,Interrogate hospital-level results,PASS,Users could question named hospital metrics,Retained human interrogation in workflow,PASS,Interactive result review
+HO-02,Human oversight,Escalate anomaly for review,PASS,Poorer hospital result triggered source-data review,Retained anomaly investigation as required step,PASS,Recorded investigation workflow

@@ -105,4 +105,18 @@ Tools used across projects include **Claude Code, OpenAI Codex, GitHub, Vercel, 
 
 ## Portfolio scope
 
-This portfolio includes applied AI evaluation, measurement projects and AI-assisted systems. Maya is the most developed evaluation project.
+This portfolio brings together applied AI evaluation, responsible AI,
+behavioural science, data analysis and AI-assisted product development.
+
+The projects deliberately cover different parts of the AI lifecycle:
+
+- **Maya** — evaluating the safety and behaviour of a patient-facing clinical AI
+- **MISMATCH** — turning public data into human-centred policy intelligence
+- **Flower federated evaluation** — testing data, mathematical, federated and privacy integrity
+- **Behavioural research** — applying behavioural science to real-world decision systems
+- **AI-assisted products** — defining, building, testing and deploying working digital systems
+
+Across the portfolio, my focus is less on writing software manually and more
+on defining the right problem, designing system behaviour, interrogating
+evidence, evaluating outputs, identifying failure modes and using AI tools
+to turn ideas into working systems.

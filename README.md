@@ -104,7 +104,7 @@ An independent narrative literature review examining the evidence for music-base
 
 The project also discusses limitations in the evidence base, including small samples, heterogeneous interventions, short follow-up periods and limited representation of people with advanced Parkinson’s disease.
 
-[Read the literature review](research/music-therapy-parkinsons/music-therapy-parkinsons-literature-review.pdf)
+[Read the literature review](research-writing/music-therapy-parkinsons/music-therapy-parkinsons-literature-review.pdf)
 
 ### Confidently Wrong — Interactive AI Literacy & Learning Design
 

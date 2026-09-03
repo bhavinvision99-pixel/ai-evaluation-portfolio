@@ -98,6 +98,14 @@ Vision and Dyslexia
 Evidence synthesis in a contested clinical area, with attention to conflicting findings, association versus causation and limits of visual interventions.
 Read the project
 
+### Music therapy in Parkinson’s disease
+
+An independent narrative literature review examining the evidence for music-based interventions in Parkinson’s disease. The review considers rhythmic auditory stimulation, gait and motor symptoms, speech, mood, cognition, quality of life and the role of music therapy alongside pharmacological and multidisciplinary treatment.
+
+The project also discusses limitations in the evidence base, including small samples, heterogeneous interventions, short follow-up periods and limited representation of people with advanced Parkinson’s disease.
+
+[Read the literature review](research/music-therapy-parkinsons/music-therapy-parkinsons-literature-review.pdf)
+
 ### Confidently Wrong — Interactive AI Literacy & Learning Design
 
 Built an interactive learning experience for non-technical users exploring a deceptively difficult problem: **how do you know when an AI-generated answer deserves your trust?**
